@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class AdvancedUserRecipe1746105931(BasicNewsRecipe):
+    title          = 'Goto News Proto'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('Drop Site', 'https://www.dropsitenews.com/feed'),
+        ('Ken Klippenstein', 'https://www.kenklippenstein.com/feed'),
+        ('NakedCapitalism', 'https://www.nakedcapitalism.com/feed'),
+        ('Ed Zitron', 'https://www.wheresyoured.at/rss/'),
+        ('MintPress', 'https://www.mintpressnews.com/feed/'),
+        ('Mondoweiss', 'https://mondoweiss.net/feed/'),
+        ('Kawsachun', 'https://kawsachun.com/feed/'),
+        ('Geopolitical Economy Report', 'https://geopoliticaleconomy.com/feed/'),
+        ('Institute for the Study of War', 'https://www.understandingwar.org/rss.xml'),
+        ('Signal Cleveland', 'https://signalcleveland.org/feed/'),
+        ('Clevescene - Cleveland News', 'https://www.clevescene.com/cleveland/Rss.xml?oid=38416998'),
+        ('Clevescene - Ohio News', 'https://www.clevescene.com/cleveland/Rss.xml?oid=38417004'),
+        ('Real Deal', 'https://rtandrews.blogspot.com/feeds/posts/default?alt=rss'),
+        ('Fight Back!', 'https://fightbacknews.org/feed/'),
+    ]
